@@ -1570,18 +1570,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4825658281039335712, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4825658281039335712, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4825658281039335712, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4825658281039335713, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.21
@@ -1626,163 +1614,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4825658281039335713, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4825658281039335713, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
     - target: {fileID: 4825658281039335773, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
       propertyPath: m_Name
       value: Caballero
       objectReference: {fileID: 0}
-    - target: {fileID: 4825658281039335773, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4825658281039335774, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
-      propertyPath: atributos
+    - target: {fileID: 4825658281261335266, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
+      propertyPath: jugador
       value: 
-      objectReference: {fileID: 11400000, guid: 57c7d971fe176a64a94c6e9a3c81f902, type: 2}
-    - target: {fileID: 4825658281039335774, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
-      propertyPath: distanciaAtaque
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4825658281039335774, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
-      propertyPath: distanciaDeteccion
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4825658281039335775, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 937e24b26a2fdeb45be083741b591e0a, type: 2}
+      objectReference: {fileID: 233911803}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
---- !u!1 &4825658281261335265 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4825658281039335773, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
-  m_PrefabInstance: {fileID: 4825658281261335264}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4825658281261335266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4825658281261335265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8940e526fb0d08e4fbfe48bb6ec4b3af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jugador: {fileID: 233911803}
---- !u!114 &4825658281261335267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4825658281261335265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 845d7737a76f1f349935ca1d805e9cd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  desfase: 1
-  hitBox: {x: 1, y: 1}
-  layerAtaque:
-    serializedVersion: 2
-    m_Bits: 1024
---- !u!114 &4825658281261335271 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4825658281039335774, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
-  m_PrefabInstance: {fileID: 4825658281261335264}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4825658281261335265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03356b502c4052b419d4a223c63e6a8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4825658281261335272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4825658281261335265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac448f2fae31d774393c19dfd430dd00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saludBase: 20
-  OnMorir:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4825658281261335271}
-        m_TargetAssemblyTypeName: Caballero, Assembly-CSharp
-        m_MethodName: Morir
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!50 &4825658281261335273
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4825658281261335265}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0.1
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!70 &4825658281261335274
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4825658281261335265}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2.125}
-  m_Direction: 0
---- !u!114 &4825658281261335275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4825658281261335265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85c5523afa7bee647ba01e7cdfa073d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &8580985326290093093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1790,6 +1631,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 594106732028228907, guid: 90e47b7d8ac8898488b745d45b5fb628, type: 3}
+      propertyPath: atributos
+      value: 
+      objectReference: {fileID: 11400000, guid: 57c7d971fe176a64a94c6e9a3c81f902, type: 2}
     - target: {fileID: 863378513904113537, guid: 90e47b7d8ac8898488b745d45b5fb628, type: 3}
       propertyPath: jugador
       value: 
@@ -1798,17 +1643,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hechicero
       objectReference: {fileID: 0}
+    - target: {fileID: 1265891075610373647, guid: 90e47b7d8ac8898488b745d45b5fb628, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6263732453347992782, guid: 90e47b7d8ac8898488b745d45b5fb628, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.2097654
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 6263732453347992782, guid: 90e47b7d8ac8898488b745d45b5fb628, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.748507
+      value: 1.57
       objectReference: {fileID: 0}
     - target: {fileID: 6263732453347992782, guid: 90e47b7d8ac8898488b745d45b5fb628, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -13.03067
       objectReference: {fileID: 0}
     - target: {fileID: 6263732453347992782, guid: 90e47b7d8ac8898488b745d45b5fb628, type: 3}
       propertyPath: m_LocalRotation.x

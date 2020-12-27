@@ -12,7 +12,13 @@ GameObject:
   - component: {fileID: 4825658281039335712}
   - component: {fileID: 4825658281039335775}
   - component: {fileID: 4825658281039335774}
-  m_Layer: 0
+  - component: {fileID: 4825658281261335273}
+  - component: {fileID: 4825658281261335274}
+  - component: {fileID: 4825658281261335266}
+  - component: {fileID: 4825658281261335267}
+  - component: {fileID: 4825658281261335272}
+  - component: {fileID: 4825658281261335275}
+  m_Layer: 8
   m_Name: Caballero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 4825658281039335773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.6952453, y: -4.1592684, z: -13.030675}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -94,7 +100,7 @@ Animator:
   m_GameObject: {fileID: 4825658281039335773}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 937e24b26a2fdeb45be083741b591e0a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -115,6 +121,115 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03356b502c4052b419d4a223c63e6a8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  atributos: {fileID: 0}
+  atributos: {fileID: 11400000, guid: 57c7d971fe176a64a94c6e9a3c81f902, type: 2}
   nombre: Caballero
   experiencia: 10
+  distanciaDeteccion: 5
+  distanciaAtaque: 3
+--- !u!50 &4825658281261335273
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4825658281039335773}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0.1
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!70 &4825658281261335274
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4825658281039335773}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 2.125}
+  m_Direction: 0
+--- !u!114 &4825658281261335266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4825658281039335773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8940e526fb0d08e4fbfe48bb6ec4b3af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jugador: {fileID: 0}
+--- !u!114 &4825658281261335267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4825658281039335773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845d7737a76f1f349935ca1d805e9cd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desfase: 1
+  hitBox: {x: 1, y: 1}
+  layerAtaque:
+    serializedVersion: 2
+    m_Bits: 1024
+--- !u!114 &4825658281261335272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4825658281039335773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac448f2fae31d774393c19dfd430dd00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saludBase: 20
+  OnMorir:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4825658281039335774}
+        m_TargetAssemblyTypeName: Caballero, Assembly-CSharp
+        m_MethodName: Morir
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4825658281261335275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4825658281039335773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c5523afa7bee647ba01e7cdfa073d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

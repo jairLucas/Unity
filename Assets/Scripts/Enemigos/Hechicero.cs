@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Hechicero : EnemigoIA{
-    public override void EnemigoAtacar(){
+   /* public override void EnemigoAtacar(){
       Debug.Log("Disparando bola de fuergo");
-    }
-    public override void VoltearSprite(){
+    }*/
+     private void Update()
+  {
+    Comportamiento();
+  }
+ public override void VoltearSprite(){
       if (input.horizontal < 0){
         spriteRenderer.flipX = false;
       }else{

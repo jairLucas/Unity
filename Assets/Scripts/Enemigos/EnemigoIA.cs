@@ -8,6 +8,7 @@ public class EnemigoIA : Enemigo
   private int correrHash;
   private int atacarHash;
   private int muerteHash;
+  
   protected InputEnemigo input;
   private bool muerto;
   private Atacante atacante;
@@ -28,7 +29,7 @@ public class EnemigoIA : Enemigo
     PresentarseDeFormaCortez();
     correrHash = Animator.StringToHash("corriendo");
     atacarHash = Animator.StringToHash("atacar");
-    atacarHash = Animator.StringToHash("muerto");
+    muerteHash = Animator.StringToHash("muerto");
   }
   private void Update()
   {
@@ -47,6 +48,7 @@ public class EnemigoIA : Enemigo
       }
 
     }
+
 
   }
 
@@ -72,7 +74,7 @@ public class EnemigoIA : Enemigo
   }
   void RealizarAtaque(){
     int probabilidadDeAtaque = Random.Range(0, 100);
-    if(probabilidadDeAtaque>95){
+    if(probabilidadDeAtaque>50){
       direccionAtaque = input.direccionHaciaJugador;
       atacando = true;
       enCombate =true;
