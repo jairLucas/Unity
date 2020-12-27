@@ -27,9 +27,12 @@ public class Salud : MonoBehaviour
         else
         {
           saludActual = 0;
+
           if (OnMorir!=null){
             OnMorir.Invoke();
+         
           }
+         
         }
       }
     }
@@ -43,8 +46,8 @@ public class Salud : MonoBehaviour
     {
       SaludActual += cantidad;
     }
-    private void DestruirGameObject(){
-      Destroy(gameObject);
+    public void DestruirGameObject(){
+      Destroy(gameObject,1f);
     }
 
 

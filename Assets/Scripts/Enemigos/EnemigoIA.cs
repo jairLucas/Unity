@@ -74,11 +74,12 @@ public class EnemigoIA : Enemigo
   }
   void RealizarAtaque(){
     int probabilidadDeAtaque = Random.Range(0, 100);
+     animator.SetBool(correrHash,false);
     if(probabilidadDeAtaque>50){
       direccionAtaque = input.direccionHaciaJugador;
       atacando = true;
       enCombate =true;
-      animator.SetBool(correrHash,false);
+     
       animator.SetTrigger(atacarHash);
     }
   }
