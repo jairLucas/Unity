@@ -1321,7 +1321,19 @@ MonoBehaviour:
   saludBase: 10
   OnMorir:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 331048183843142996, guid: 6e3e895621c55c94eabe2e322a3584ab, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2076584230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,7 +1592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4825658281039335713, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.030675
+      value: -13
       objectReference: {fileID: 0}
     - target: {fileID: 4825658281039335713, guid: dfe060f75cc2d6d488d1f73aeb185ac3, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1657,7 +1669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6263732453347992782, guid: 90e47b7d8ac8898488b745d45b5fb628, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.03067
+      value: -13
       objectReference: {fileID: 0}
     - target: {fileID: 6263732453347992782, guid: 90e47b7d8ac8898488b745d45b5fb628, type: 3}
       propertyPath: m_LocalRotation.x
