@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class Salud : MonoBehaviour
 {
     public int saludBase;
     private int saludActual;
+    public Transform barraDeSalud;
     public UnityEvent OnMorir;
     public int SaludActual
     {
@@ -32,7 +34,11 @@ public class Salud : MonoBehaviour
             OnMorir.Invoke();
          
           }
-         
+          else
+          {
+                  
+    
+          }
         }
       }
     }
@@ -45,9 +51,36 @@ public class Salud : MonoBehaviour
     public void modificarSaludActual(int cantidad)
     {
       SaludActual += cantidad;
+     try
+     {
+         ActualizarBarraDeSalud(); 
+     }
+     catch (System.Exception)
+     {
+         
+         throw;
+     }
+     
     }
     public void DestruirGameObject(){
       Destroy(gameObject,1f);
+    }
+    private void ActualizarBarraDeSalud(){
+      try
+      {
+         Vector3 escala = new Vector3((float)SaludActual / saludBase,1,1);
+      barraDeSalud.localScale=escala;
+          
+      }
+      catch (System.Exception)
+      {
+          
+          throw;
+      }
+     
+    }
+    public void Reiniciar(){
+       SceneManager.LoadScene("Scenes/Nivel_1");
     }
 
 

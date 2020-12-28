@@ -20,7 +20,7 @@ public class Atacable : MonoBehaviour
     public void RecibirAtaque(Vector2 direccionDeAtaque, int danio)
     {
       miSalud.modificarSaludActual(-danio);
-      miRigibody.AddForce(direccionDeAtaque*danio*100);
+      miRigibody.AddForce(direccionDeAtaque*danio*40);
 
     }
 

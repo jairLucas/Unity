@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TextoCuadro : MonoBehaviour
 {
-    public string content_text = "";
+   /* public string content_text = "";
     public Text texto_cuadro;
     public GameObject cuadro;
     public GameObject Botton;
@@ -26,5 +26,5 @@ public class TextoCuadro : MonoBehaviour
     public void CerrarText()
     {
         cuadro.SetActive(false);
-    }
+    }*/
 }
