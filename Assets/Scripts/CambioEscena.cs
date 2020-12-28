@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CambioEscena : MonoBehaviour
+
 {
+  public string scene="Nivel_1";
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +18,15 @@ public class CambioEscena : MonoBehaviour
     {
 
     }
-    void OnTriggerEnter2D(Collider2D other)
+    public void CambiarScena(string sceneBuildIndex){
+      SceneManager.LoadScene(sceneBuildIndex,LoadSceneMode.Single);
+    }
+    public void OnTriggerEnter2D(Collider2D other)
     {
       if (other.gameObject.tag == "Player")
       {
-        SceneManager.LoadScene("Nivel_2",LoadSceneMode.Single);
+        SceneManager.LoadScene(scene,LoadSceneMode.Single);
       }
     }
+
 }
